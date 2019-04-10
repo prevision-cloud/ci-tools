@@ -83,7 +83,7 @@ foreach my $flow (@flows_draft) {
 	# readdir is alphabetical, so last found is the last version
 	if (defined $filename) {
 		print "> Updating:\t$filename\n";
-		createNew($parser->parse_file($filepath), $flow, 'Draft');
+		createNew($parser->parse_file($filepath), $flow, 'Obsolete');
 	}
 	else {
 		print "> NOT_FOUND:\t$flow\n";
